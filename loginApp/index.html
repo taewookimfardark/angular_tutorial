@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body data-ng-app="tutorialApp">
+<div data-ng-controller="LoginController">
+<form data-ng-submit="submit()">
+    <input type="email" data-ng-model="userData.email"/>
+    <input type="password" data-ng-model="userData.password"/>
+    <button type="submit">login</button>
+    {{userData}}
+</form>
+</div>
+
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="service/httpRequest.js"></script>
+</body>
+</html>
